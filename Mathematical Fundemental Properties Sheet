@@ -30,17 +30,26 @@ $$\cos^2(\theta)+sin^2(\theta) = 1$$
 $$ 1+\tan^2(\theta) = \sec^2(\theta) $$
 $$ 1+\cot^2(\theta) = \csc^2(\theta) $$
 
+$$ \cot(\theta) = \frac {1}{\tan(\theta)} = \frac {\cos(\theta)}{\sin(\theta)} $$
+$$ \csc(\theta) = \frac{1}{\sin(\theta)} $$
+$$ \sec(\theta) = \frac{1}{\cos(\theta)} $$
+
 ####Addition Formulas
-$$ \cos(A+B) = \cos(A).\cos(B) - \sin(A).\sin(B) $$
-$$ \sin(A+B) = \sin(A).\cos(B) + \cos(A).\sin(B) $$
+$$ \cos(A \pm B) = \cos(A).\cos(B) \mp \sin(A).\sin(B) $$
+$$ \sin(A \pm B) = \sin(A).\cos(B) \pm \cos(A).\sin(B) $$
+$$ \tan(A \pm B) = \frac {\tan(A) \pm \tan(B)}{1 \mp \tan(A)\tan(B)} $$
 
 ####Double Angle Formulas
 $$ \cos(2\theta) = \cos^2(\theta)-\sin^2(\theta) $$
 $$ \sin(2\theta) = 2\sin(\theta)\cos(\theta) $$
+$$ \tan(2\theta) = \frac {2\tan(\theta)}{1-\tan^2(\theta)} $$
+$$ \cot(2\theta) = \frac {\cot^2(\theta) - 1}{2\cot(\theta)} $$
 
 ####Half-Angle Formulas
-$$ \cos^2(\theta) = \frac{1 + \cos(2\theta)}{2} $$
-$$ \sin^2(\theta) = \frac {1 - \cos(2\theta)}{2}  $$
+$$ \cos\Big(\frac{\theta}{2}\Big) = \pm \sqrt{\frac{1 + \cos(\theta)}{2}} $$
+$$ \sin\Big(\frac{\theta}{2}\Big) = \pm \sqrt{\frac {1 - \cos(\theta)}{2}}  $$
+$$ \tan\Big(\frac{\theta}{2}\Big) = \pm \sqrt{\frac {1 - \cos(\theta)}{1 + \cos(\theta)}}
+= \frac{\sin(\theta)}{1+\cos(\theta)} = \frac {1-\cos(\theta)}{\sin(\theta)} $$
 
 ###Hyperbolic Function
 $$ \sinh(x) = \frac {\mathrm{e}^x - \mathrm{e}^{-x}}{2} $$

@@ -1,0 +1,198 @@
+#Subjects and Algorithms Summaries
+
+##Limitss
+####Existance
+Limit exists $\iff$ left-hand and right-hand limits exists and
+$\lim\limits_{x \to a^-}f(x) = \lim\limits_{x \to a^+}f(x)$.
+
+
+
+##Functions
+
+####Monotonic Functions
+If function f is increasing ($f'(x)>0$) or decreasing ($f'(x)<0$) for an interval
+$\implies$ f is Monotonic function.
+
+####Solving Inverse  of a Functions
+1)Solve $y=f(x)$ for x
+$$ x = f^{-1}(y) $$
+
+2)Interchange x and y to obtain
+$$ y = f^{-1}(x) $$
+
+####Continuity
+$f(x)$ is continous $\iff$ followings holds:
+$$ 1) \exists f(c) \quad (c\in D(f)) $$
+$$ 2) \exists \lim\limits_{x \to c}f(x) $$
+$$ 3) \lim\limits_{x \to 0}f(x) = f(c) $$
+(Function is continous $\iff$ there exists $f(c)$ and limit exists at c and
+limit of f(x) at when x $\to$ c is equalt to $f(c)$).
+
+##One-variable Calculus
+
+####Vertical Asymptote
+If
+$$ \lim\limits_{x \to a^+}f(x) = \pm \infty \quad \lor \quad \lim\limits_{x \to a^-}f(x) = \pm \infty$$
+a is vertical asymptote.
+
+####Horizontal Asymptote
+If
+$$ \lim\limits_{x \to \infty}f(x) = b \quad \lor \quad \lim\limits_{x \to -\infty}f(x) = b$$
+horizontal asymptote.
+
+####Oblique or Slant Asymptote
+
+An oblique or a slant asymptote is an asymptote
+that is neither vertical or horizontal.
+
+If the degree of the numerator is one more than
+the degree of the denominator, then the graph of
+the rational function will have a slant asymptote.
+Slant asymptote find by long division of the rational function. When denumerator's
+degree is equal to one, numerator is the asymptote function.
+
+!* A graph can have both a vertical and a slant asymptote, but it CANNOT
+have both a horizontal and slant asymptote.
+
+####L'Hospital's Rule
+$\underline{\text{!This rule is can be used in only one-variable calculus}}$
+
+
+If  $\lim\limits_{x \to a}\frac{f(x)}{g(x)} = \frac{0}{0} \lor \frac{\infty}{\infty}$, take
+derivates of  numerator and denumerator seperately ($\frac{f'(x)}{g'(x)}$) until
+it is $\neq \frac{0}{0}$ or $\frac{\infty}{\infty}$
+
+####Sandwich Theorem
+Suppose $g(x)\leq f(x) \leq h(x)$ and $\lim\limits_{x \to c}g(x) = \lim\limits_{x \to c}h(x) = L$. Then,
+$$ \lim\limits_{x \to c}f(x) = L $$
+
+####Tangent Line to the Curve
+Let $y = f(x)$ at $(x_0, y_0)$
+
+1) Calculate slope m: $m=\lim\limits_{h \to 0}\frac{f(x_0+h)-f(x_0)}{h} = f'(x_0)$
+
+2) If limit exists, find tangent line: $y=y_0+m(x-x_0)$
+
+####Instantaneous Speed
+$$ \lim\limits_{\bigtriangleup t \to 0}\frac {\bigtriangleup s}{\bigtriangleup t} = f'(x_0)$$
+
+
+####Graphing steps for y=f(x)
+1) Identify domain of f and symmetries (even/odd)(horizontal/vertical/slant)
+
+2) Find $y', y''$
+
+3) Find critical points(bounds, $f'(x)=0$, $\nexists f'(x)$) as (x,y).
+
+4) Find intervals of f that it is increasing ($f'(x)>0$) or decreasing ($f'(x)<0$)
+
+5) Find local max and minimums (critical points that change signs $f'(x)$).
+
+6) Calculate all critical points and find absolute min and abosulute max.
+
+7) Find points of inflection ($f''(x) = 0$) and concavity ($f''<0$ and $f''>0$)
+
+8) Plot key points, intersections then concavities.
+
+####Shifting and Strecthing Graph
+Let $y=af(b(x+c))+d$.
+
+a: (+) $\to$ horizontal stretch or compression, (-) $\to$ reflection about y-axis
+
+b: (+) $\to$ vertical strecth or compression, (-) $\to$ reflection about x-axis
+
+c: horizontal Shifting
+
+d: vertical shift
+
+
+#####Rolle's Theorem
+Let $f(x)=y$ is continuous at every point of [a,b] and differentiable at every
+point of (a,b). Then, if $f(a) = f(b)$ then $\exists c$ that $f'(c)=0$.
+
+####Mean-Value Theorem
+Mean-Value theorem use Rolle's Theorem to get this equation:
+$$ \frac{f(b)-f(a)}{b-a}=f'(c) $$
+
+
+
+##Integral
+####Integration by Parts
+$$ \int (f(x)g'(x))dx = f(x)g(x)-\int (f'(x)g(x))dx $$
+
+Let $u = f(x)$ and $v=g(x)$. Then the statement will be
+$$ \int(u)dv = uv - \int (v)du $$
+
+*Priority of picking u is shortened by $\underline{\text{LIATE}}$ (L-Logarithms,
+I-Inverse Trigonometric, A-Algebraic, T-Trigonometric, E-Exponential)
+
+####Taking Integral of Powers of Cosinus and Sinus
+Let $\int (\sin^m(x).\cos^n(x))dx$.
+
+1) If m-odd $\to$ replace $\sin^2(x)$ with $\sin^2(x) = 1-\cos^2(x)$
+
+2) If m-even and n-odd $\to$ replace $\cos^2(x)$ with $\cos^2(x) = 1-sin^2(x)$
+
+3) If m-even and n-even $\to$ replace $\sin^2(x)$ with $\sin^2(x) = \frac{1-\cos(2x)}{2}$
+and $\cos^2(x) = \frac{1+\cos(2x)}{2}$
+
+
+###Vector Calculus
+#####Area of Parallelogram
+$$ ||u \times v|| = |u||v|\sin(\theta) $$
+
+#####Volume of Parallelpiped (Triple Scalar Product)
+$$ (u \times v).w = \begin{vmatrix}
+u_1 & y_3 & u_3 \\
+v_1 & v_2 & v_3 \\
+w_1 & w_2 & w_3
+ \end{vmatrix} $$
+
+ #####Vector Equation for line
+ $r_0$ is initial point, t is parameter (scalar), v is direction vector (usually unit vector)
+ $$ r(t) = r_0 + tv $$
+
+
+#####Distance from a Point to a line
+![](/assets/point-to-line-distance.png =x200)
+
+$$ \frac{|\overrightarrow{PQ} \times \overrightarrow{n}|}{||\overrightarrow{n}||} = distance $$
+
+####Plane Equation
+![](/assets/plane-equation.png =x300)
+
+Normal Vector to a plane: $n = Ai + Bj + Ck$
+
+Plane = $n.\overrightarrow{P_0P}$
+
+= $A(x-x_0)+B(y-y_0)+C(z-z_0) = D$
+
+So, the final equation for plane is:
+
+$$ A(x-x_0)+B(y-y_0)+C(z-z_0) - D = 0 $$
+
+
+####Line of Intersection of Two Planes
+
+![](/assets/intersection-of-two-planes.png =x200)
+
+Let planes $P_1$ and $P_2$ are $P_1=A_1x + B_1y+C_1z = D_1$ and $P_2=A_2x+B_2y+C_2z = D_2$
+
+1) Find an intersection point ($P_0$) of two planes: $P_1 = P_2$
+
+2) Find direction vector ($\overrightarrow{u}$) of intersection line
+
+$$ \overrightarrow{u} = \overrightarrow{n_1} \times \overrightarrow{n_2} =  \begin{vmatrix}
+i & j & k \\
+A_1 & B_1 & C_1 \\
+A_2 & B_2 & C_2
+ \end{vmatrix} $$
+
+3) Write new plane equation as follows:
+$$ A_3(x-x_0)+B_3(y-y_0)+C_3(z-z_0) - D = 0 $$
+
+
+#####Distance from a Point to a Plane
+![](/assets/point-to-plane-distance.png =x250)
+
+$$ \frac{|\overrightarrow{PQ} . \overrightarrow{n}|}{||\overrightarrow{n}||} = distance $$

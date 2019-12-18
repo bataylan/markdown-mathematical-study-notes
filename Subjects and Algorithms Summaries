@@ -116,7 +116,7 @@ $$ \frac{f(b)-f(a)}{b-a}=f'(c) $$
 
 
 
-##Integral
+###Integral
 ####Integration by Parts
 $$ \int (f(x)g'(x))dx = f(x)g(x)-\int (f'(x)g(x))dx $$
 
@@ -137,7 +137,7 @@ Let $\int (\sin^m(x).\cos^n(x))dx$.
 and $\cos^2(x) = \frac{1+\cos(2x)}{2}$
 
 
-###Vector Calculus
+##Vector Calculus
 #####Area of Parallelogram
 $$ ||u \times v|| = |u||v|\sin(\theta) $$
 
@@ -255,8 +255,6 @@ $$ R_n(x) = \frac {f^{n+1}(c)}{(n+1)!}(x-a)^{n+1} $$
 
 $\exists c$ between $a$ and $x$ such that
 
-
-
 #####Arc Length
 
 $$ L = \int_a^b |\overrightarrow {v}|dt =
@@ -284,3 +282,172 @@ $$ P = \frac{1}{K} \\ \text{Radius of Curvature} \\ $$
 $$ N(t) = \frac{1}{K}.\frac{dT}{ds} = \frac {T'(t)}{|T'(t)|} \\$$
 
 $$ B = T \times N \\ \text{Unit Binormal Vector} \\$$
+
+
+##Linear Algebra
+
+###Algebraic Structures
+
+#####Group
+
+- is a set G
+
+- one binary operation defined with properties:
+
+  - Closure: a $\diamond$ b $\in$ G
+
+  - Identity Element: $a \diamond e = e \diamond a = a$
+
+  - Associavity: $a \diamond (b \diamond c) = (a \diamond b)\diamond c$
+
+- is Abelain Group  $\implies a \diamond b = b \diamond a$
+
+
+#####Field
+
+- is a set F
+
+- two operation (+), ($\times$) defined:
+
+  - F-{0} is also Abelian Group under ($\times$) operation
+
+#####Vector Spaces
+
+- non-empty set
+
+- two operations defined;
+
+  - addition (+)
+
+  - scalar multiplication ($\times$)
+
+- following properties holds;
+
+  - Closed under $+$ and $\times$
+
+  - Commutative under ($+$)
+
+  - Associative under $+$ and $\times$ ($u+v = v+u$)
+
+  - There exists Additive Identity: $\exists \overrightarrow{0} \in V (u+(-u) = (-u)+u=\overrightarrow{0})$
+
+    and Multiplicative Identity ($\overrightarrow{u} \times e = e \times \overrightarrow{u} = \overrightarrow{u}$)$
+
+  - Distrubutive $(k \times (\overrightarrow{u} + \overrightarrow{v}) = k \overrightarrow{u} + k \overrightarrow{l})$ and $((k+l) \overrightarrow{u} = k \overrightarrow{u} + l \overrightarrow{u})$
+
+$\ast$ To determine whether a set V with addition and scalar multiplication
+defined on V is a vector space requires verification of the 10 vector space
+axioms.
+
+$\ast$ In all vector spaces, additive inverses are unique.
+
+####Subspace
+
+A subspace W of a vector space V is a nonempty subset that is itself
+a vector space with respect to the inherited operations of vector addition and scalar
+multiplication on V .
+
+
+
+$\ast$ The intersection of any collection of subspaces of a vector space is a subspace of
+the vector space.
+
+######Proving Subspace
+
+$\ast$ If W is nonempty subset of the vector space V, then W is a subspace of V $\iff$ W is **closed under addition and scalar multiplication** (and $\overrightarrow{0}$ is in W).
+
+To prove that, we need to show $\overrightarrow{u} + (c \cdot \overrightarrow{v}) \in W$ with 3 steps.
+
+Step 1 - Closed Under Addition: Suppose that $\overrightarrow{u}, \overrightarrow{v} \in W$; then $u + (1 \cdot v) = u + v \in W$
+
+Step 2 - W is Nonempty (has $\overrightarrow{0}$ vector): $\overrightarrow{0} = u + ((−1) \cdot u)$
+
+Step 3 - Closed Under Scalar Multiplication: $c \times u = 0 + (c \cdot u) \in W$
+
+Step 4 - Converse: if W is a subspace with u and v in W, and c a scalar, then since W
+is closed under addition and scalar multiplication, we know that $u + (c \cdot v) \in W$  $\Box$.
+
+
+
+#####Polynomial Vector Spaces
+
+$P_n$ the set of all polynomials of degree n or less.
+
+$p(x) = a_0 + a_1 x + a_2 x^2 + · · · + a_{n−1}x^{n−1} + a_n x^n$
+
+$\ast$Note that $V = P_n \cup$ {$0$} is a real vector space, where 0 is the zero polynomial.
+
+$\ast$Note that n degree Polynomial Vector Space's dimension is $dim(P_n) = n+1$
+
+
+
+######Vector Space Properties
+
+-  $\overrightarrow{0}$ vector is unique
+
+- $0 \cdot \overrightarrow{v} = \overrightarrow{0}$ and $k \cdot \overrightarrow{0} = \overrightarrow{0}$
+
+- Additive inverse of a vector $\overrightarrow{v}$ is unique
+
+- If $k \cdot \overrightarrow{v} = \overrightarrow{0} \implies k = 0 \vee \overrightarrow{v} = \overrightarrow{0}$
+
+
+
+####Linear Combination
+
+Linear combination of vectors defined as the form:
+
+$$ (c_1 \cdot \overrightarrow{v_1}) + (c_2 \cdot \overrightarrow{v_2}) + \dots + (c_k \cdot \overrightarrow{v_k})$$
+
+#####Span of Set of Vectors
+Let $S = \{v_1, v_2, \dots ,v_k \}$ be a vector set.
+
+$$ span(S) = \{c_1 \cdot \overrightarrow{v_1}) + (c_2 \cdot \overrightarrow{v_2}) + \dots + (c_k \cdot \overrightarrow{v_k})\} $$
+
+#####Proposition - $span(S)$ is a Subspace
+
+$\ast$ If S is a set of vectors in vector space V $\implies span(S)$ is a **subspace**.
+
+- **Proof**
+
+  $\overrightarrow{u}+c\overrightarrow{w} = (c_1 v_1+ \dots + c_n v_n) + c(d_1 v_1 + \dots + d_n v_n) = (c_1 + c d_1)v_1 + \dots + (c_n + c d_n)v_n$
+
+  Since $c_n + c d_n$ is a scalar, $u+cw \in span(S)$, and hence span is a subspace $\Box$.
+
+
+#####Null Space
+Null space of A is the set $N(A) = \{ \overrightarrow{x}: A\overrightarrow{x} = \overrightarrow{0} , x \in R^n \}$.
+
+#####Column Space
+
+Column space of A is denoted by $col(A)$ is the set of all linear combinations of column vectors of A.
+
+#####Theorem - $Ax = b$ consistence
+
+Let A be an m × n matrix. The linear system $Ax = b$ is consistent $\iff b \in col(A)$.
+
+
+#####Theorem - $N(A)$ and $col(A)$ are Subspace
+
+If $A$ is $m \times n$ matrix, $col(A)$ is subspace of $R^m$ and $N(A)$ is subspace of $R^n$.
+
+
+####Basis and Dimension
+
+#####Linear Dependence
+
+$S = \{v_1, v_2, \dots , v_m \}$ in a vector space V is **linearly independent** $\implies c_1 v_1 + \dots + c_m v_m = 0$ is **only have trivial solution** $c_1 = c_2 = \dots = c_m = 0$.
+
+If the equation has a nontrivial solution the set $S$ is **linearly dependent**.
+
+
+
+#####Basis for a Vector Space - Definition
+
+If following properties hold:
+
+1) $B$ is linearly independent set.
+
+2) $B$ spans $V$
+
+$B$ is a **basis** for vector space $V$.

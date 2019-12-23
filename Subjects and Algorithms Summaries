@@ -286,6 +286,66 @@ $$ B = T \times N \\ \text{Unit Binormal Vector} \\$$
 
 ##Linear Algebra
 
+#####System and Matrix Relation
+
+$$ \text{System} \to \begin{cases}
+a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n = b_1\\
+\vdots \\
+a_{m1}x_1 + a_{m2}x_2 + \dots + a_{mn}x_n = b_n\\
+\end{cases} $$
+
+$$ \text{Matrix form } AX = b \to \begin{bmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+\vdots \\
+a_{m1} & a_{m2} & \dots & a_{mn}\
+\end{bmatrix}
+
+\begin{bmatrix}
+x_1 \\
+\vdots \\
+x_n \\
+\end{bmatrix}
+
+=
+
+\begin{bmatrix}
+b_1 \\
+\vdots \\
+b_n
+\end{bmatrix}
+$$
+
+$$  \text{Augmented Matrix form } [A|b] \to
+\begin{bmatrix}
+a_{11} & a_{12} & \dots & a_{1n} & | & b_1 \\
+\vdots & \quad & \quad & \quad & | &  \vdots \\
+a_{m1} & a_{m2} & \dots & a_{mn} & | & b_n\\
+\end{bmatrix}
+$$
+
+#####Rank
+Rank of matrix is equal to nonzero rows of echelon form of a matrix.
+
+$\ast$ So this means that linear independent 'row' vector count of a matrix.
+
+$Rank(A) \neq Rank[A|b] \implies$ no solution
+
+$Rank(A) = Rank[A|b] = n \implies$ unique solution
+
+$Rank(A) = Rank[A|b] < n \implies$ infinitely many solution
+
+
+#####Determinant
+
+$$ det(A)=\displaystyle\sum_{k=1}^{n} a_{ik}C_{ik} $$
+
+$$ \text{where } C_{ij}= (-1)^{i+j}M_{ij} \text{ and } M_{ij} \text{ is the minor of A} $$
+
+$\ast det(A) = det(A^t)$
+
+$det(A) \neq 0 \implies$ A is invertible and $Rank(A) = n$
+
+
 ###Algebraic Structures
 
 #####Group
@@ -329,11 +389,15 @@ $$ B = T \times N \\ \text{Unit Binormal Vector} \\$$
 
   - Associative under $+$ and $\times$ ($u+v = v+u$)
 
-  - There exists Additive Identity: $\exists \overrightarrow{0} \in V (u+(-u) = (-u)+u=\overrightarrow{0})$
+  - There exists Additive Identity: $\exists \overrightarrow{0} \in V (u+(-u) =
+  (-u)+u=\overrightarrow{0})$
 
-    and Multiplicative Identity ($\overrightarrow{u} \times e = e \times \overrightarrow{u} = \overrightarrow{u}$)$
+    and Multiplicative Identity ($\overrightarrow{u} \times e = e \times
+    \overrightarrow{u} = \overrightarrow{u}$)$
 
-  - Distrubutive $(k \times (\overrightarrow{u} + \overrightarrow{v}) = k \overrightarrow{u} + k \overrightarrow{l})$ and $((k+l) \overrightarrow{u} = k \overrightarrow{u} + l \overrightarrow{u})$
+  - Distrubutive $(k \times (\overrightarrow{u} + \overrightarrow{v}) = k
+  \overrightarrow{u} + k \overrightarrow{l})$ and $((k+l) \overrightarrow{u} =
+  k \overrightarrow{u} + l \overrightarrow{u})$
 
 $\ast$ To determine whether a set V with addition and scalar multiplication
 defined on V is a vector space requires verification of the 10 vector space
@@ -354,13 +418,17 @@ the vector space.
 
 ######Proving Subspace
 
-$\ast$ If W is nonempty subset of the vector space V, then W is a subspace of V $\iff$ W is **closed under addition and scalar multiplication** (and $\overrightarrow{0}$ is in W).
+$\ast$ If W is nonempty subset of the vector space V, then W is a subspace of V
+$\iff$ W is **closed under addition and scalar multiplication** (and $\overrightarrow{0}$ is in W).
 
-To prove that, we need to show $\overrightarrow{u} + (c \cdot \overrightarrow{v}) \in W$ with 3 steps.
+To prove that, we need to show $\overrightarrow{u} + (c \cdot \overrightarrow{v})
+\in W$ with 3 steps.
 
-Step 1 - Closed Under Addition: Suppose that $\overrightarrow{u}, \overrightarrow{v} \in W$; then $u + (1 \cdot v) = u + v \in W$
+Step 1 - Closed Under Addition: Suppose that $\overrightarrow{u}, \overrightarrow{v}
+\in W$; then $u + (1 \cdot v) = u + v \in W$
 
-Step 2 - W is Nonempty (has $\overrightarrow{0}$ vector): $\overrightarrow{0} = u + ((−1) \cdot u)$
+Step 2 - W is Nonempty (has $\overrightarrow{0}$ vector): $\overrightarrow{0} =
+u + ((−1) \cdot u)$
 
 Step 3 - Closed Under Scalar Multiplication: $c \times u = 0 + (c \cdot u) \in W$
 
@@ -385,11 +453,13 @@ $\ast$Note that n degree Polynomial Vector Space's dimension is $dim(P_n) = n+1$
 
 -  $\overrightarrow{0}$ vector is unique
 
-- $0 \cdot \overrightarrow{v} = \overrightarrow{0}$ and $k \cdot \overrightarrow{0} = \overrightarrow{0}$
+- $0 \cdot \overrightarrow{v} = \overrightarrow{0}$ and $k \cdot \overrightarrow{0}
+= \overrightarrow{0}$
 
 - Additive inverse of a vector $\overrightarrow{v}$ is unique
 
-- If $k \cdot \overrightarrow{v} = \overrightarrow{0} \implies k = 0 \vee \overrightarrow{v} = \overrightarrow{0}$
+- If $k \cdot \overrightarrow{v} = \overrightarrow{0} \implies k = 0 \vee
+\overrightarrow{v} = \overrightarrow{0}$
 
 
 
@@ -397,12 +467,14 @@ $\ast$Note that n degree Polynomial Vector Space's dimension is $dim(P_n) = n+1$
 
 Linear combination of vectors defined as the form:
 
-$$ (c_1 \cdot \overrightarrow{v_1}) + (c_2 \cdot \overrightarrow{v_2}) + \dots + (c_k \cdot \overrightarrow{v_k})$$
+$$ (c_1 \cdot \overrightarrow{v_1}) + (c_2 \cdot \overrightarrow{v_2}) + \dots
++ (c_k \cdot \overrightarrow{v_k})$$
 
 #####Span of Set of Vectors
 Let $S = \{v_1, v_2, \dots ,v_k \}$ be a vector set.
 
-$$ span(S) = \{c_1 \cdot \overrightarrow{v_1}) + (c_2 \cdot \overrightarrow{v_2}) + \dots + (c_k \cdot \overrightarrow{v_k})\} $$
+$$ span(S) = \{(c_1 \cdot \overrightarrow{v_1}) + (c_2 \cdot \overrightarrow{v_2})
++ \dots + (c_k \cdot \overrightarrow{v_k})\} $$
 
 #####Proposition - $span(S)$ is a Subspace
 
@@ -410,35 +482,71 @@ $\ast$ If S is a set of vectors in vector space V $\implies span(S)$ is a **subs
 
 - **Proof**
 
-  $\overrightarrow{u}+c\overrightarrow{w} = (c_1 v_1+ \dots + c_n v_n) + c(d_1 v_1 + \dots + d_n v_n) = (c_1 + c d_1)v_1 + \dots + (c_n + c d_n)v_n$
+  $\overrightarrow{u}+c\overrightarrow{w} = (c_1 v_1+ \dots + c_n v_n) +
+  c(d_1 v_1 + \dots + d_n v_n) = (c_1 + c d_1)v_1 + \dots + (c_n + c d_n)v_n$
 
   Since $c_n + c d_n$ is a scalar, $u+cw \in span(S)$, and hence span is a subspace $\Box$.
 
 
 #####Null Space
-Null space of A is the set $N(A) = \{ \overrightarrow{x}: A\overrightarrow{x} = \overrightarrow{0} , x \in R^n \}$.
+Null space of A is the set $N(A) = \{ \overrightarrow{x}: A\overrightarrow{x}
+= \overrightarrow{0} , x \in R^n \}$.
 
 #####Column Space
 
-Column space of A is denoted by $col(A)$ is the set of all linear combinations of column vectors of A.
+Column space of A is denoted by $col(A)$ is the set of all linear combinations
+of column vectors of A.
 
 #####Theorem - $Ax = b$ consistence
 
-Let A be an m × n matrix. The linear system $Ax = b$ is consistent $\iff b \in col(A)$.
+Let A be an m × n matrix. The linear system $Ax = b$ is consistent $\iff b
+\in col(A)$.
 
 
 #####Theorem - $N(A)$ and $col(A)$ are Subspace
 
-If $A$ is $m \times n$ matrix, $col(A)$ is subspace of $R^m$ and $N(A)$ is subspace of $R^n$.
+If $A$ is $m \times n$ matrix, $col(A)$ is subspace of $R^m$ and $N(A)$ is
+subspace of $R^n$.
 
 
 ####Basis and Dimension
 
+#####Span
+Let $S = \{v_1, v_2, \dots , v_m \}$ and $\forall v \in V$ can be written as
+$v = c_1v_1 + c_2v_2 + \dots + c_mv_m \implies span(S) = V$ (S span V).
+
+Let $dim(V) = n$.
+
+$\ast$ If $k < n \implies$ $span(S) \neq V$.
+
+**How to show S spans $R^n$**
+
+1) Take $v = (a_1, a_2, \dots, a_n) \in R^n$
+
+2) Let $v = (a_1, a_2, \dots, a_n) = c_1v_1 + \dots + c_n v_n$ s.t. $c_i$ are constants.
+
+3) Show that $\begin{bmatrix}
+v_1 & v_2 & \dots & v_k & | & a_1 \\
+ \downarrow & \downarrow & \dots & \downarrow & | & \vdots \\
+ \quad & \quad & \quad & \quad & | & a_n \\
+\end{bmatrix}$ is consistent (by echelon form).
+
+
+
 #####Linear Dependence
 
-$S = \{v_1, v_2, \dots , v_m \}$ in a vector space V is **linearly independent** $\implies c_1 v_1 + \dots + c_m v_m = 0$ is **only have trivial solution** $c_1 = c_2 = \dots = c_m = 0$.
+$S = \{v_1, v_2, \dots , v_m \}$ in a vector space V is **linearly independent**
+$\implies c_1 v_1 + \dots + c_m v_m = 0$ is **only have trivial solution**
+$c_1 = c_2 = \dots = c_m = 0$.
 
 If the equation has a nontrivial solution the set $S$ is **linearly dependent**.
+
+$\ast$ Linear dependance is a property of vector sets.
+
+$\ast$ If $v_n$ can be written as linear combination of vectors $\{v_1, v_2, \dots ,
+v_{n-1} \}$, then S is linearly **dependent**.
+
+$\ast$ If $\overrightarrow{0}$ vector contained by S, then S is linearly **dependent**.
 
 
 
@@ -446,8 +554,88 @@ If the equation has a nontrivial solution the set $S$ is **linearly dependent**.
 
 If following properties hold:
 
-1) $B$ is linearly independent set.
+1) $B$ is linearly independent set ($c_1 v_1 + \dots + c_m v_m = 0$ is **only
+have trivial solution**).
 
-2) $B$ spans $V$
+2) $B$ spans $V$ (Every item in V should be written as linear combination of
+vectors in B).
 
 $B$ is a **basis** for vector space $V$.
+
+$\ast \forall v \in V$ has a unique representation.
+
+######Corollary
+Let $S= \{ v_1, v_2, \dots, v_k \}$ st. $v_1, v_2, \dots, v_k \in V$ and $A =
+[v_1|v_2|\dots|v_k]$.
+For Rank(V) = n.
+
+- if $k>n$, then S is **linearly dependent**
+
+- if $k=n$ and $det(A) = 0$ (also means that $Rank(A) \neq n$) then S is **linearly dependent**
+
+- if $k=n and $det(A) \neq 0$ (also means that $Rank(A) = n$) then S is **linearly independent**
+
+#####Wronskian of Function set
+
+Function set $S = {f_1, f_2, \dots, f_k}$ where $f_1, f_2, \dots, f_k \in C^{k-1}(I)$
+(means that those functions differentiable k-1 times)
+
+$$ W[f_1, f_2, \dots, f_k] = \begin{vmatrix}
+f_1(x) & f_2(x) & \dots & f_k(x) \\
+\vdots \\
+f^{(k-1)}_1(x) & f^{(k-1)}_2 & \dots & f^{(k-1)}_k(x)
+\end{vmatrix} $$
+
+$\ast$ Wronskian is scalar since it is a determinant.
+
+$\ast$ If $W[f_1, f_2, \dots, f_k] \neq 0$ for any $x_0 \in I$, then S is linearly independent.
+
+#####Dimension
+The number of vectors in any basis for $V$ and denoted by $dim(V)$.
+
+$\ast$ Every basis of V has $n$ vectors.
+
+$\ast$ If $V = \{ \overrightarrow{0} \} \implies dim(V) = 0$.
+
+$\ast$ $dim(M_{m \times n}(IR)) = m \cdot n$ , $dim(P_n(R))= n + 1$
+
+$\ast$ Let $dim(V) = n$ and $B = \{ v_1, v_2, \dots, v_k \}$ s.t. $v_1, v_2, \dots, v_k \in V$
+
+1) If B linearly independent $\implies$ B is basis for V (B spans V also).
+
+2) If B spans V $\implies$ B is basis for V (B is linearly independent also).
+
+
+#####Ordered Basis
+
+Ordered basis are basis that ordered set of vectors.
+
+#####Transition Matrix of Ordered Basis from B to B'
+
+Let $B = \{ v_1, v_2, \dots, v_n \}$ and $B' = \{ v'_1, v'_2, \dots, v'_n \}$
+
+Transition matrix $[I]^{B'}_B = \begin{bmatrix}
+\begin{bmatrix}
+v_1
+\end{bmatrix}_{B'}
+& \begin{bmatrix}
+v_2
+\end{bmatrix}_{B'}
+&
+\dots
+&
+\begin{bmatrix}
+v_n
+\end{bmatrix}_{B'}
+\end{bmatrix}$
+
+
+**Finding Transition Matrix**
+
+1) Let $c_1, c_2, \dots, c_n$ are coordinate vectors. Than solve equation for
+$c_1 v'_1 = v_1, c_2 v'_2 = v_2, \dots, c_n v'_n = v_n$
+
+2) Than put them in form of $[I]^{B'}_B = \begin{bmatrix}
+c_1 & c_2 & \dots & c_n \\
+\downarrow & \downarrow & \dots & \downarrow
+\end{bmatrix}$

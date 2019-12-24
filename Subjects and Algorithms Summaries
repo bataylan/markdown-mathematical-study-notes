@@ -5,8 +5,6 @@
 Limit exists $\iff$ left-hand and right-hand limits exists and
 $\lim\limits_{x \to a^-}f(x) = \lim\limits_{x \to a^+}f(x)$.
 
-
-
 ##Functions
 
 ####Monotonic Functions
@@ -509,9 +507,9 @@ If $A$ is $m \times n$ matrix, $col(A)$ is subspace of $R^m$ and $N(A)$ is
 subspace of $R^n$.
 
 
-####Basis and Dimension
+###Basis and Dimension
 
-#####Span
+####Span
 Let $S = \{v_1, v_2, \dots , v_m \}$ and $\forall v \in V$ can be written as
 $v = c_1v_1 + c_2v_2 + \dots + c_mv_m \implies span(S) = V$ (S span V).
 
@@ -533,7 +531,7 @@ v_1 & v_2 & \dots & v_k & | & a_1 \\
 
 
 
-#####Linear Dependence
+####Linear Dependence
 
 $S = \{v_1, v_2, \dots , v_m \}$ in a vector space V is **linearly independent**
 $\implies c_1 v_1 + \dots + c_m v_m = 0$ is **only have trivial solution**
@@ -550,7 +548,7 @@ $\ast$ If $\overrightarrow{0}$ vector contained by S, then S is linearly **depen
 
 
 
-#####Basis for a Vector Space - Definition
+####Basis for a Vector Space - Definition
 
 If following properties hold:
 
@@ -564,7 +562,7 @@ $B$ is a **basis** for vector space $V$.
 
 $\ast \forall v \in V$ has a unique representation.
 
-######Corollary
+**Corollary**
 Let $S= \{ v_1, v_2, \dots, v_k \}$ st. $v_1, v_2, \dots, v_k \in V$ and $A =
 [v_1|v_2|\dots|v_k]$.
 For Rank(V) = n.
@@ -575,7 +573,7 @@ For Rank(V) = n.
 
 - if $k=n and $det(A) \neq 0$ (also means that $Rank(A) = n$) then S is **linearly independent**
 
-#####Wronskian of Function set
+####Wronskian of Function set
 
 Function set $S = {f_1, f_2, \dots, f_k}$ where $f_1, f_2, \dots, f_k \in C^{k-1}(I)$
 (means that those functions differentiable k-1 times)
@@ -590,7 +588,7 @@ $\ast$ Wronskian is scalar since it is a determinant.
 
 $\ast$ If $W[f_1, f_2, \dots, f_k] \neq 0$ for any $x_0 \in I$, then S is linearly independent.
 
-#####Dimension
+####Dimension
 The number of vectors in any basis for $V$ and denoted by $dim(V)$.
 
 $\ast$ Every basis of V has $n$ vectors.
@@ -606,11 +604,11 @@ $\ast$ Let $dim(V) = n$ and $B = \{ v_1, v_2, \dots, v_k \}$ s.t. $v_1, v_2, \do
 2) If B spans V $\implies$ B is basis for V (B is linearly independent also).
 
 
-#####Ordered Basis
+####Ordered Basis
 
 Ordered basis are basis that ordered set of vectors.
 
-#####Transition Matrix of Ordered Basis from B to B'
+####Transition Matrix of Ordered Basis from B to B'
 
 Let $B = \{ v_1, v_2, \dots, v_n \}$ and $B' = \{ v'_1, v'_2, \dots, v'_n \}$
 
@@ -635,7 +633,32 @@ v_n
 1) Let $c_1, c_2, \dots, c_n$ are coordinate vectors. Than solve equation for
 $c_1 v'_1 = v_1, c_2 v'_2 = v_2, \dots, c_n v'_n = v_n$
 
-2) Than put them in form of $[I]^{B'}_B = \begin{bmatrix}
+2) Then put them in form of $[I]^{B'}_B = \begin{bmatrix}
 c_1 & c_2 & \dots & c_n \\
 \downarrow & \downarrow & \dots & \downarrow
 \end{bmatrix}$
+
+
+####Eigenvalues and Eigenvectors
+$A$ is matrix, $\overrightarrow{v}$ is eigenvector and $\lambda$ is eigenvalue.
+$$ A \overrightarrow{v} = \lambda \overrightarrow{v} $$
+
+$\lambda$ is eigenvalue of matrix $A \iff det(A-\lambda I) = 0$
+
+$\ast A \overrightarrow{v} = \lambda \overrightarrow{v}$ says that eigenvectors
+keep same direction when multiplied by $A$.
+
+$\ast$ The eigenvalues of $A^2 \to \lambda^2$ and $A^{-1} \to \lambda^{-1}$ with the same eigenvectors.
+
+$\ast$ The sum of $\lambda$'s = sum of main diagonal of A.
+
+$\ast$ The product of $\lambda$'s is equal to determinant of A.
+
+
+**Finding Eigenvalues and Eigenvectors**
+
+1) Compute $det(A - \lambda I) = 0$
+
+2) Find the roots of this polynomial ($\lambda$'s)
+
+3) Solve ($a - \lambda I)\overrightarrow{v} = 0$ to find eigenvectors $\overrightarrow{v}$

@@ -468,6 +468,90 @@ Linear combination of vectors defined as the form:
 $$ (c_1 \cdot \overrightarrow{v_1}) + (c_2 \cdot \overrightarrow{v_2}) + \dots
 + (c_k \cdot \overrightarrow{v_k})$$
 
+$\ast$ Let $u$ and $v$ are vectors in same vector space.  For any scalar $c$,
+$u = cv \implies$ then u is linear combination of v.
+
+
+####Linear Dependence
+
+$S = \{v_1, v_2, \dots , v_m \}$ in a vector space V is **linearly independent**
+$\implies c_1 v_1 + \dots + c_m v_m = 0$ is **only have trivial solution**
+$c_1 = c_2 = \dots = c_m = 0$.
+
+If the equation has a nontrivial solution the set $S$ is **linearly dependent**.
+
+$\ast$ Linear dependance is a property of vector sets.
+
+$\ast A_{n \times n}$ and column vectors of A  **linearly independent** $\iff det(A) \neq 0$
+
+$\ast A_{n \times n}$ and column vectors of A **linearly independent** $\iff$ A is invertible.
+
+$\ast$ If $\overrightarrow{0}$ vector contained by S, then S is **linearly dependent**.
+
+$\ast$ Let $S = \{v_1, v_2, \dots, v_n\}$ is set of nonzero vectors that in
+$R^m$. $n > m \implies$ S is **linearly dependent**.
+
+$\ast$ Set of nonzero vectors is **linearly dependent** $\iff$ at least one of the vectors
+is linear combination of other vectors in the set.
+
+$\ast$ S is **linearly independent** set of vectors $\implies$ subset of S is
+linearly independent.
+
+$\ast$ T is **linearly dependent** set of vectors and S contains T $\implies$ S is
+linearly dependent.
+
+$\ast$ Let $Ax = b$ consistent. The solution is unique $\iff$ column vectors of A
+is **linearly independent**.
+
+$\ast$ Let $Ax = 0$. The only solution is trivial $\iff$ column vectors of A
+is **linearly independent**.
+
+**Determining set of vectors linearly independent**
+
+Let column vectors
+
+$$ v_1 = \begin{bmatrix}
+a_{11} \\
+a_{21} \\
+\vdots \\
+a_{m1} \\
+\end{bmatrix}
+v_2 = \begin{bmatrix}
+a_{12} \\
+a_{22} \\
+\vdots \\
+a_{m2} \\
+\end{bmatrix}
+\dots
+v_n = \begin{bmatrix}
+a_{1n} \\
+a_{2n} \\
+\vdots \\
+a_{mn} \\
+\end{bmatrix} $$
+1) Write column vectors as a linear combination $\to c_1 v_1 + c_2 v_2 + \dots + c_n v_n = 0$
+
+2) obtain a system based on scalars $\to \begin{bmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+a_{21} & a_{22} & \dots & a_{2n} \\
+\vdots \\
+a_{m1} & a_{m2} & \dots & a_{mn} \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+0 \\
+0\\
+\vdots \\
+0 \\
+\end{bmatrix}$
+
+3) Solve the system.
+
+4) If only solution is the trivial solution $c_1 = c_2 = \dots = c_n = 0 \implies$
+ vectors are linearly independent.
+
+
+
 #####Span of Set of Vectors
 Let $S = \{v_1, v_2, \dots ,v_k \}$ be a vector set.
 
@@ -531,20 +615,7 @@ v_1 & v_2 & \dots & v_k & | & a_1 \\
 
 
 
-####Linear Dependence
 
-$S = \{v_1, v_2, \dots , v_m \}$ in a vector space V is **linearly independent**
-$\implies c_1 v_1 + \dots + c_m v_m = 0$ is **only have trivial solution**
-$c_1 = c_2 = \dots = c_m = 0$.
-
-If the equation has a nontrivial solution the set $S$ is **linearly dependent**.
-
-$\ast$ Linear dependance is a property of vector sets.
-
-$\ast$ If $v_n$ can be written as linear combination of vectors $\{v_1, v_2, \dots ,
-v_{n-1} \}$, then S is linearly **dependent**.
-
-$\ast$ If $\overrightarrow{0}$ vector contained by S, then S is linearly **dependent**.
 
 
 

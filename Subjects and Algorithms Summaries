@@ -40,6 +40,8 @@ horizontal asymptote.
 
 ####Oblique or Slant Asymptote
 
+$$  $$
+
 An oblique or a slant asymptote is an asymptote
 that is neither vertical or horizontal.
 
@@ -283,8 +285,118 @@ $$ B = T \times N \\ \text{Unit Binormal Vector} \\$$
 
 
 ##Linear Algebra
+####Special Matrices
+**1) Square matrix** $A_{nxn}$ (m=n) matrices.
 
-#####System and Matrix Relation
+**2) Zero Matrix** $A = A_{ij}$ is a zero matrix if $a_{ij} = 0$  $\forall i,j$.
+
+**3) Diagonal Matrix** If $A$ is square matrix and $a_{ij} = 0$ for $\forall i
+\neq j$ and $a_{ij} \neq 0$ for $\exists i = j \implies$ A is diagonal matrix.
+
+**4) Identity Matrix** $I_{nxn} = (\sigma_{ij})$ and $\sigma_{ij} = \begin{cases}
+1, i = j \\
+0, i \neq j\\
+\end{cases}$
+
+**5) Transpose of a Matrix** $A^t$ is a transpose of $A_{mxn} = (a_{ij})$ if
+$A^t_{nxm} = (a_{ji})$
+
+**6) Symmetric Matrix** $A = (a_{ij})$ and $a_{ij} = a_{ji} \implies$ A is a
+symmetric matrix and $A = A^t$
+
+**7) Upper Triangular Matrix** $A = (a_{ij})$ and $a_{ij} = 0$ for $\forall j<i$
+
+**8) Lower Triangular Matrix** $A = (a_{ij})$ and $a_{ij} = 0$ for $\forall j>i$
+
+
+####Operations on Matrices
+Let $A = (a_{ij}), B = (b_{ij}) ...$
+
+**1) Matrix Addition** For addition, two matrices should have same size. $C = A + B$
+and $c_{ij} = a_{ij} + b_{ij}$
+
+**2) Scalar Multiplication** $kA = k(a_{ij})$ for $\forall i,j$
+
+**3) Matrix Multiplication** Let A is an **(mxn)** matrix and B is an **(nxp)**
+matrix and let $C = A.B$ where C is **(mxp)** matrix. Then $c_{ij} =
+\sum_{k=1}^n a_{ik}b_{kj}$.
+
+Note: Since matrix multiplication need appropriate sizes, when AB exist, BA may not be exist
+and if BA exist, $AB \neq BA$ AB and BA can be not equal.
+
+####Special Products
+######Dot Products
+Let $A = (a_{ij}), B = (b_{ij})$ and they **must have same (mxn) size**.
+$C = A \cdot B = a_{ij}b_{ij}$
+
+####Matrix Properties
+Let A,B,C are appropriate sized matrices and k is a scalar.
+
+1) $(AB)C = A(BC)$  (associativity)
+
+2) $A(B+C) = AB+AC$ (distributivity)
+
+3) $(A+B)^t = A^t + B^t$
+
+4) $(KA)^t = KA^t$
+
+5) $(A^t)^t = A$
+
+6) $(AC)^t = C^t A^t$
+
+
+####Elementary Row Operations
+
+Let rows of matrices defined by $R_1, R_2, ... R_m$. There are 3 **elementary row operation**
+
+M1) Interlope position of two rows (ex. denoted by $R_2 \leftrightarrow R_5$)
+
+M2) Multiply a row by a nonzero constant (ex. denoted by $kR_1$)
+
+M3) Add a multiple of one row to another row (ex. adding $3xR_2$ to $R_3$,denoted by  $3R_2 \rightarrow R_3$)
+
+#####Elementary Row Operation Notes:
+**Proposition 1** Any matrix is obtained from A by finite sequence of ERO's (elementary row operations)
+is row equivalent to A.
+
+
+####Row Echelon Form
+**Definition 1** An (mxn) matrix A is said to be in row-echelon form if the following properties all hold;
+1) If any rows existing entirely of zeros, they should be at the bottom of rows.
+
+2) The first nonzero element in every nonzero row should be equal to 1 (called leading 1).
+
+3) The leading 1 of any row below the first row is to the right of the leading 1 of the row above it.
+
+**Proposition 1** Any matrix is row equivalent to a row-echelon matrix.
+
+**Proposition 2** Row-echelon form of a given matrix is not unique.
+
+**Proposition 3** All row echelon matrices that are row equivalent to A have the
+**same number of nonzero rows**.
+
+
+####Reduced Row-Echelon Form
+**Definition** An (mxn) matrix is said to be in a reduced row-echelon form if following holds;
+
+1) The matrix should be row-echelon form.
+
+2) Any column that contains a leading 1 has zero everywhere else.
+
+**Note** Identity matrix I is in the reduced row-echelon form
+
+**Proposition 1** The reduced row echelon form is unique.
+
+
+####Rank
+Rank of matrix is equal to nonzero rows of echelon form of a matrix.
+
+$\ast$ So this means that linear independent 'row' vector count of a matrix.
+
+
+
+
+####System and Matrix Relation
 
 $$ \text{System} \to \begin{cases}
 a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n = b_1\\
@@ -321,16 +433,44 @@ a_{m1} & a_{m2} & \dots & a_{mn} & | & b_n\\
 \end{bmatrix}
 $$
 
-#####Rank
-Rank of matrix is equal to nonzero rows of echelon form of a matrix.
+#####Homogeneity of systems
 
-$\ast$ So this means that linear independent 'row' vector count of a matrix.
+1) Homogeneous System If all $b_i = 0$  $(AX = 0)$
 
-$Rank(A) \neq Rank[A|b] \implies$ no solution
+2) Non-Homogeneous System If $\exists b_i \neq 0$
 
-$Rank(A) = Rank[A|b] = n \implies$ unique solution
+#####Consistency of systems
 
-$Rank(A) = Rank[A|b] < n \implies$ infinitely many solution
+1) Consistent System If system has at least one solution.
+
+2) Inconsistent System If system has no solution.
+
+
+**Note** A system can have **3 type solution**;
+1) Unique solution $\rightarrow Rank(A) = Rank[A|b] = n \implies$ unique solution
+2) Infinitely many solution $\rightarrow Rank(A) = Rank[A|b] < n \implies$ infinitely many solution
+3) No solution $\rightarrow Rank(A) \neq Rank[A|b] \implies$ no solution
+
+
+
+
+
+
+
+####Equivalent Systems
+**Definition** Two linear systems are called equivalent systems if they have exactly
+the same solution set.
+
+**Note** Equivalent systems obtained by ERO's. ERO's doesn't change solution sets.
+
+
+####Pivot and Free Variables
+
+If a system has augmented matrix in row-echelon form:
+
+a) **Leading 1** variables are called **pivot variables**.
+
+b) Variables which aren't leading 1's and non-zero called free variables.
 
 
 #####Determinant

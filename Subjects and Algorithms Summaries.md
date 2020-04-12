@@ -1,3 +1,7 @@
+TeX: {
+  extensions: ["AMSmath.js", "AMSsymbols.js"]
+}
+
 # Subjects and Algorithms Summaries
 
 ## Limit

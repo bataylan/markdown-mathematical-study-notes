@@ -1,6 +1,3 @@
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({ TeX: { extensions: ["AMSmath.js","AMSsymbols.js"] }});
-</script>
 \require{AMSmath}
 \require{AMSsymbols}
 # Subjects and Algorithms Summaries

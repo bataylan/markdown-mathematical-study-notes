@@ -811,19 +811,21 @@ Ordered basis are basis that ordered set of vectors.
 Let $B = \{ v_1, v_2, \dots, v_n \}$ and $B' = \{ v'_1, v'_2, \dots, v'_n \}$
 
 Transition matrix
-$$ [I]^{B'}_B = \begin{bmatrix}
+$$ [I]^{B'}_B =
+
 \begin{bmatrix}
+\left[
 v_1
-\end{bmatrix}_{B'}
-& \begin{bmatrix}
+\right]_{B'}
+& \left[
 v_2
-\end{bmatrix}_{B'}
+\right]_{B'}
 &
 \dots
 &
-\begin{bmatrix}
+\left[
 v_n
-\end{bmatrix}_{B'}
+\right]_{B'}
 \end{bmatrix} $$
 
 

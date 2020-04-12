@@ -16,6 +16,7 @@ $\implies$ f is Monotonic function.
 $$ x = f^{-1}(y) $$
 
 2)Interchange x and y to obtain
+
 $$ y = f^{-1}(x) $$
 
 ####Continuity

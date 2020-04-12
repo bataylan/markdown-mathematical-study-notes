@@ -1,7 +1,7 @@
-TeX: {
-  extensions: ["AMSmath.js", "AMSsymbols.js"]
-}
-
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: { extensions: ["AMSmath.js","AMSsymbols.js"] }});
+</script>
+\require{extension}
 # Subjects and Algorithms Summaries
 
 ## Limit

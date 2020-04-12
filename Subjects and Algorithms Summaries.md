@@ -811,8 +811,8 @@ Ordered basis are basis that ordered set of vectors.
 Let $B = \{ v_1, v_2, \dots, v_n \}$ and $B' = \{ v'_1, v'_2, \dots, v'_n \}$
 
 Transition matrix
-$$ [I]^{B'}_B =
 
+$$ [I]^{B'}_B =
 \begin{bmatrix}
 \left[
 v_1

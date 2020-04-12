@@ -1,17 +1,17 @@
-#Subjects and Algorithms Summaries
+# Subjects and Algorithms Summaries
 
-##Limitss
-####Existance
+## Limitss
+#### Existance
 Limit exists $\iff$ left-hand and right-hand limits exists and
 $\lim\limits_{x \to a^-}f(x) = \lim\limits_{x \to a^+}f(x)$.
 
-##Functions
+## Functions
 
-####Monotonic Functions
+#### Monotonic Functions
 If function f is increasing ($f'(x)>0$) or decreasing ($f'(x)<0$) for an interval
 $\Rightarrow$ f is Monotonic function.
 
-####Solving Inverse  of a Functions
+#### Solving Inverse  of a Functions
 1)Solve $y=f(x)$ for x
 $$ x = f^{-1}(y) $$
 
@@ -19,7 +19,7 @@ $$ x = f^{-1}(y) $$
 
 $$ y = f^{-1}(x) $$
 
-####Continuity
+#### Continuity
 $f(x)$ is continous $\iff$ followings holds:
 $$ 1) \exists f(c) \quad (c\in D(f)) $$
 $$ 2) \exists \lim\limits_{x \to c}f(x) $$
@@ -27,21 +27,19 @@ $$ 3) \lim\limits_{x \to 0}f(x) = f(c) $$
 (Function is continous $\iff$ there exists $f(c)$ and limit exists at c and
 limit of f(x) at when x $\to$ c is equalt to $f(c)$).
 
-##One-variable Calculus
+## One-variable Calculus
 
-####Vertical Asymptote
+#### Vertical Asymptote
 If
 $$ \lim\limits_{x \to a^+}f(x) = \pm \infty \quad \lor \quad \lim\limits_{x \to a^-}f(x) = \pm \infty$$
 a is vertical asymptote.
 
-####Horizontal Asymptote
+#### Horizontal Asymptote
 If
 $$ \lim\limits_{x \to \infty}f(x) = b \quad \lor \quad \lim\limits_{x \to -\infty}f(x) = b$$
 horizontal asymptote.
 
-####Oblique or Slant Asymptote
-
-$$  $$
+#### Oblique or Slant Asymptote
 
 An oblique or a slant asymptote is an asymptote
 that is neither vertical or horizontal.
@@ -55,7 +53,7 @@ degree is equal to one, numerator is the asymptote function.
 !* A graph can have both a vertical and a slant asymptote, but it CANNOT
 have both a horizontal and slant asymptote.
 
-####L'Hospital's Rule
+#### L'Hospital's Rule
 $\underline{\text{!This rule is can be used in only one-variable calculus}}$
 
 
@@ -63,22 +61,22 @@ If  $\lim\limits_{x \to a}\frac{f(x)}{g(x)} = \frac{0}{0} \lor \frac{\infty}{\in
 derivates of  numerator and denumerator seperately ($\frac{f'(x)}{g'(x)}$) until
 it is $\neq \frac{0}{0}$ or $\frac{\infty}{\infty}$
 
-####Sandwich Theorem
+#### Sandwich Theorem
 Suppose $g(x)\leq f(x) \leq h(x)$ and $\lim\limits_{x \to c}g(x) = \lim\limits_{x \to c}h(x) = L$. Then,
 $$ \lim\limits_{x \to c}f(x) = L $$
 
-####Tangent Line to the Curve
+#### Tangent Line to the Curve
 Let $y = f(x)$ at $(x_0, y_0)$
 
 1) Calculate slope m: $m=\lim\limits_{h \to 0}\frac{f(x_0+h)-f(x_0)}{h} = f'(x_0)$
 
 2) If limit exists, find tangent line: $y=y_0+m(x-x_0)$
 
-####Instantaneous Speed
+#### Instantaneous Speed
 $$ \lim\limits_{\bigtriangleup t \to 0}\frac {\bigtriangleup s}{\bigtriangleup t} = f'(x_0)$$
 
 
-####Graphing steps for y=f(x)
+#### Graphing steps for y=f(x)
 1) Identify domain of f and symmetries (even/odd)(horizontal/vertical/slant)
 
 2) Find $y', y''$
@@ -95,7 +93,7 @@ $$ \lim\limits_{\bigtriangleup t \to 0}\frac {\bigtriangleup s}{\bigtriangleup t
 
 8) Plot key points, intersections then concavities.
 
-####Shifting and Strecthing Graph
+#### Shifting and Strecthing Graph
 Let $y=af(b(x+c))+d$.
 
 a: (+) $\to$ horizontal stretch or compression, (-) $\to$ reflection about y-axis
@@ -107,18 +105,18 @@ c: horizontal Shifting
 d: vertical shift
 
 
-#####Rolle's Theorem
+##### Rolle's Theorem
 Let $f(x)=y$ is continuous at every point of [a,b] and differentiable at every
 point of (a,b). Then, if $f(a) = f(b)$ then $\exists c$ that $f'(c)=0$.
 
-####Mean-Value Theorem
+#### Mean-Value Theorem
 Mean-Value theorem use Rolle's Theorem to get this equation:
 $$ \frac{f(b)-f(a)}{b-a}=f'(c) $$
 
 
 
-###Integral
-####Integration by Parts
+### Integral
+#### Integration by Parts
 $$ \int (f(x)g'(x))dx = f(x)g(x)-\int (f'(x)g(x))dx $$
 
 Let $u = f(x)$ and $v=g(x)$. Then the statement will be
@@ -127,7 +125,7 @@ $$ \int(u)dv = uv - \int (v)du $$
 *Priority of picking u is shortened by $\underline{\text{LIATE}}$ (L-Logarithms,
 I-Inverse Trigonometric, A-Algebraic, T-Trigonometric, E-Exponential)
 
-####Taking Integral of Powers of Cosinus and Sinus
+#### Taking Integral of Powers of Cosinus and Sinus
 Let $\int (\sin^m(x).\cos^n(x))dx$.
 
 1) If m-odd $\to$ replace $\sin^2(x)$ with $\sin^2(x) = 1-\cos^2(x)$
@@ -138,28 +136,28 @@ Let $\int (\sin^m(x).\cos^n(x))dx$.
 and $\cos^2(x) = \frac{1+\cos(2x)}{2}$
 
 
-##Vector Calculus
-#####Area of Parallelogram
+## Vector Calculus
+##### Area of Parallelogram
 $$ ||u \times v|| = |u||v|\sin(\theta) $$
 
-#####Volume of Parallelpiped (Triple Scalar Product)
+##### Volume of Parallelpiped (Triple Scalar Product)
 $$ (u \times v).w = \begin{vmatrix}
 u_1 & y_3 & u_3 \\
 v_1 & v_2 & v_3 \\
 w_1 & w_2 & w_3
  \end{vmatrix} $$
 
-#####Vector Equation for line
+##### Vector Equation for line
  $r_0$ is initial point, t is parameter (scalar), v is direction vector (usually unit vector)
  $$ r(t) = r_0 + tv $$
 
 
-#####Distance from a Point to a line
+##### Distance from a Point to a line
 ![](assets/point-to-line-distance.png =x200)
 
 $$ \frac{|\overrightarrow{PQ} \times \overrightarrow{n}|}{||\overrightarrow{n}||} = distance $$
 
-####Plane Equation
+#### Plane Equation
 ![](assets/plane-equation.png =x300)
 
 Normal Vector to a plane: $n = Ai + Bj + Ck$
@@ -173,7 +171,7 @@ So, the final equation for plane is:
 $$ A(x-x_0)+B(y-y_0)+C(z-z_0) - D = 0 $$
 
 
-####Line of Intersection of Two Planes
+#### Line of Intersection of Two Planes
 
 ![](assets/intersection-of-two-planes.png =x200)
 
@@ -193,12 +191,12 @@ A_2 & B_2 & C_2
 $$ A_3(x-x_0)+B_3(y-y_0)+C_3(z-z_0) - D = 0 $$
 
 
-#####Distance from a Point to a Plane
+##### Distance from a Point to a Plane
 ![](assets/point-to-plane-distance.png =x250)
 
 $$ \frac{|\overrightarrow{PQ} . \overrightarrow{n}|}{||\overrightarrow{n}||} = distance $$
 
-#####Angle between two vectors
+##### Angle between two vectors
 
 $$ \cos(\theta) = \frac {\overrightarrow{u} .  \overrightarrow{v}}{||\overrightarrow{u}||.||\overrightarrow{v}||}
 
@@ -206,12 +204,12 @@ $$ \cos(\theta) = \frac {\overrightarrow{u} .  \overrightarrow{v}}{||\overrighta
 \frac{\overrightarrow{u}.\overrightarrow{v}}{||\overrightarrow{u}||.||\overrightarrow{v}||} \Bigg) $$
 
 
-#####Angle between two Planes
+##### Angle between two Planes
 $$ \theta = \cos^{-1} \Bigg(
 \frac{\overrightarrow{n_1}.\overrightarrow{n_2}}{||\overrightarrow{n_1}||.||\overrightarrow{n_2}||} \Bigg) $$
 
 
-#####Velocity, Speed and Acceleration
+##### Velocity, Speed and Acceleration
 Let $c(t) = (x(t), y(t), z(t))$ is path.
 $$ c'(t) = v \to \mathrm{velocity} $$
 $$ |c'(t)| = |v| \to \mathrm{speed}  $$
@@ -219,7 +217,7 @@ $$ a = c''(t) = v' \to \mathrm{acceleration} $$
 
 
 
-#####Gradient of f
+##### Gradient of f
 ![](assets/gradient-of-f.png =x300)
 $$ \bigtriangledown f =
 \bigg(\frac {\partial f}{\partial x},\frac {\partial f}{\partial y},\frac {\partial f}{\partial z}\bigg) \\$$
@@ -229,20 +227,20 @@ $$ \bigtriangledown f =
 *$\bigtriangledown f$ is normal to Level Surfaces.
 
 
-#####Tangent Line
+##### Tangent Line
 ![](assets/tangent-line-and-gradient-of-f.png =x250)
 
 $$ l(t) = c(t0) + (t − t0).c'(t0) $$
 
 
-#####Tangent Planes to Level Surfaces
+##### Tangent Planes to Level Surfaces
 ![](assets/tangent-plane.png =x300)
 
 $$ \text{Tangent Plane} = \bigtriangledown f(x_0,y_0,z_0).(x-x_0, y-y_0, z-z_0) = 0 \\$$
 
 $$ \text{Slope of tangent Plane} = ||\bigtriangledown f|| $$
 
-####Taylor Theorem
+#### Taylor Theorem
 
 The main point of the single-variable Taylor theorem is to find approximations of a
 function near a given point that are accurate to a higher order than the linear approximation.
@@ -250,13 +248,13 @@ function near a given point that are accurate to a higher order than the linear 
 $$ f(a) + f'(a)(x-a) + \dfrac{f''(a)}{2!}(x-a)^2 + \cdots + \dfrac{f^{(n)}(a)}{n!}(x-a)^n + R_n $$
 
 
-#####Forms of the Remainder
+##### Forms of the Remainder
 
 $$ R_n(x) = \frac {f^{n+1}(c)}{(n+1)!}(x-a)^{n+1} $$
 
 $\exists c$ between $a$ and $x$ such that
 
-#####Arc Length
+##### Arc Length
 
 $$ L = \int_a^b |\overrightarrow {v}|dt =
 \int_a^b \sqrt{\Big(\frac {dx}{dt}\Big)^2 + \bigg(\frac {dy}{dt}\bigg)^2 + \bigg(\frac {dz}{dt}\bigg)^2} \\
@@ -285,8 +283,8 @@ $$ N(t) = \frac{1}{K}.\frac{dT}{ds} = \frac {T'(t)}{|T'(t)|} \\$$
 $$ B = T \times N \\ \text{Unit Binormal Vector} \\$$
 
 
-##Linear Algebra
-####Special Matrices
+## Linear Algebra
+#### Special Matrices
 **1) Square matrix** $A_{nxn}$ (m=n) matrices.
 
 **2) Zero Matrix** $A = A_{ij}$ is a zero matrix if $a_{ij} = 0$  $\forall i,j$.
@@ -310,7 +308,7 @@ symmetric matrix and $A = A^t$
 **8) Lower Triangular Matrix** $A = (a_{ij})$ and $a_{ij} = 0$ for $\forall j>i$
 
 
-####Operations on Matrices
+#### Operations on Matrices
 Let $A = (a_{ij}), B = (b_{ij}) ...$
 
 **1) Matrix Addition** For addition, two matrices should have same size. $C = A + B$
@@ -325,12 +323,12 @@ matrix and let $C = A.B$ where C is **(mxp)** matrix. Then $c_{ij} =
 Note: Since matrix multiplication need appropriate sizes, when AB exist, BA may not be exist
 and if BA exist, $AB \neq BA$ AB and BA can be not equal.
 
-####Special Products
-######Dot Products
+#### Special Products
+###### Dot Products
 Let $A = (a_{ij}), B = (b_{ij})$ and they **must have same (mxn) size**.
 $C = A \cdot B = a_{ij}b_{ij}$
 
-####Matrix Properties
+#### Matrix Properties
 Let A,B,C are appropriate sized matrices and k is a scalar.
 
 1) $(AB)C = A(BC)$  (associativity)
@@ -346,7 +344,7 @@ Let A,B,C are appropriate sized matrices and k is a scalar.
 6) $(AC)^t = C^t A^t$
 
 
-####Elementary Row Operations
+#### Elementary Row Operations
 
 Let rows of matrices defined by $R_1, R_2, ... R_m$. There are 3 **elementary row operation**
 
@@ -356,12 +354,12 @@ M2) Multiply a row by a nonzero constant (ex. denoted by $kR_1$)
 
 M3) Add a multiple of one row to another row (ex. adding $3xR_2$ to $R_3$,denoted by  $3R_2 \rightarrow R_3$)
 
-#####Elementary Row Operation Notes:
+##### Elementary Row Operation Notes:
 **Proposition 1** Any matrix is obtained from A by finite sequence of ERO's (elementary row operations)
 is row equivalent to A.
 
 
-####Row Echelon Form
+#### Row Echelon Form
 **Definition 1** An (mxn) matrix A is said to be in row-echelon form if the following properties all hold;
 1) If any rows existing entirely of zeros, they should be at the bottom of rows.
 
@@ -377,7 +375,7 @@ is row equivalent to A.
 **same number of nonzero rows**.
 
 
-####Reduced Row-Echelon Form
+#### Reduced Row-Echelon Form
 **Definition** An (mxn) matrix is said to be in a reduced row-echelon form if following holds;
 
 1) The matrix should be row-echelon form.
@@ -389,7 +387,7 @@ is row equivalent to A.
 **Proposition 1** The reduced row echelon form is unique.
 
 
-####Rank
+#### Rank
 Rank of matrix is equal to nonzero rows of echelon form of a matrix.
 
 $\ast$ So this means that linear independent 'row' vector count of a matrix.
@@ -397,7 +395,7 @@ $\ast$ So this means that linear independent 'row' vector count of a matrix.
 
 
 
-####System and Matrix Relation
+#### System and Matrix Relation
 
 $$ \text{System} \to \begin{cases}
 a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n = b_1\\
@@ -434,13 +432,13 @@ a_{m1} & a_{m2} & \dots & a_{mn} & | & b_n\\
 \end{bmatrix}
 $$
 
-#####Homogeneity of systems
+##### Homogeneity of systems
 
 1) Homogeneous System If all $b_i = 0$  $(AX = 0)$
 
 2) Non-Homogeneous System If $\exists b_i \neq 0$
 
-#####Consistency of systems
+##### Consistency of systems
 
 1) Consistent System If system has at least one solution.
 
@@ -452,20 +450,13 @@ $$
 2) Infinitely many solution $\rightarrow Rank(A) = Rank[A|b] < n \Rightarrow$ infinitely many solution
 3) No solution $\rightarrow Rank(A) \neq Rank[A|b] \Rightarrow$ no solution
 
-
-
-
-
-
-
-####Equivalent Systems
+#### Equivalent Systems
 **Definition** Two linear systems are called equivalent systems if they have exactly
 the same solution set.
 
 **Note** Equivalent systems obtained by ERO's. ERO's doesn't change solution sets.
 
-
-####Pivot and Free Variables
+#### Pivot and Free Variables
 
 If a system has augmented matrix in row-echelon form:
 
@@ -473,8 +464,7 @@ a) **Leading 1** variables are called **pivot variables**.
 
 b) Variables which aren't leading 1's and non-zero called free variables.
 
-
-#####Determinant
+##### Determinant
 
 $$ det(A)=\displaystyle\sum_{k=1}^{n} a_{ik}C_{ik} $$
 
@@ -485,9 +475,9 @@ $\ast det(A) = det(A^t)$
 $det(A) \neq 0 \Rightarrow$ A is invertible and $Rank(A) = n$
 
 
-###Algebraic Structures
+### Algebraic Structures
 
-#####Group
+##### Group
 
 - is a set G
 
@@ -502,7 +492,7 @@ $det(A) \neq 0 \Rightarrow$ A is invertible and $Rank(A) = n$
 - is Abelain Group  $\Rightarrow a \diamond b = b \diamond a$
 
 
-#####Field
+##### Field
 
 - is a set F
 
@@ -510,7 +500,7 @@ $det(A) \neq 0 \Rightarrow$ A is invertible and $Rank(A) = n$
 
   - F-{0} is also Abelian Group under ($\times$) operation
 
-#####Vector Spaces
+##### Vector Spaces
 
 - non-empty set
 
@@ -544,7 +534,7 @@ axioms.
 
 $\ast$ In all vector spaces, additive inverses are unique.
 
-####Subspace
+#### Subspace
 
 A subspace W of a vector space V is a nonempty subset that is itself
 a vector space with respect to the inherited operations of vector addition and scalar
@@ -555,7 +545,7 @@ multiplication on V .
 $\ast$ The intersection of any collection of subspaces of a vector space is a subspace of
 the vector space.
 
-######Proving Subspace
+###### Proving Subspace
 
 $\ast$ If W is nonempty subset of the vector space V, then W is a subspace of V
 $\iff$ W is **closed under addition and scalar multiplication** (and $\overrightarrow{0}$ is in W).
@@ -576,7 +566,7 @@ is closed under addition and scalar multiplication, we know that $u + (c \cdot v
 
 
 
-#####Polynomial Vector Spaces
+##### Polynomial Vector Spaces
 
 $P_n$ the set of all polynomials of degree n or less.
 
@@ -588,7 +578,7 @@ $\ast$Note that n degree Polynomial Vector Space's dimension is $dim(P_n) = n+1$
 
 
 
-######Vector Space Properties
+###### Vector Space Properties
 
 -  $\overrightarrow{0}$ vector is unique
 
@@ -602,7 +592,7 @@ $\ast$Note that n degree Polynomial Vector Space's dimension is $dim(P_n) = n+1$
 
 
 
-####Linear Combination
+#### Linear Combination
 
 Linear combination of vectors defined as the form:
 
@@ -613,7 +603,7 @@ $\ast$ Let $u$ and $v$ are vectors in same vector space.  For any scalar $c$,
 $u = cv \Rightarrow$ then u is linear combination of v.
 
 
-####Linear Dependence
+#### Linear Dependence
 
 $S = \{v_1, v_2, \dots , v_m \}$ in a vector space V is **linearly independent**
 $\Rightarrow c_1 v_1 + \dots + c_m v_m = 0$ is **only have trivial solution**
@@ -693,13 +683,13 @@ a_{m1} & a_{m2} & \dots & a_{mn} \\
 
 
 
-#####Span of Set of Vectors
+##### Span of Set of Vectors
 Let $S = \{v_1, v_2, \dots ,v_k \}$ be a vector set.
 
 $$ span(S) = \{(c_1 \cdot \overrightarrow{v_1}) + (c_2 \cdot \overrightarrow{v_2})
 + \dots + (c_k \cdot \overrightarrow{v_k})\} $$
 
-#####Proposition - $span(S)$ is a Subspace
+##### Proposition - $span(S)$ is a Subspace
 
 $\ast$ If S is a set of vectors in vector space V $\Rightarrow span(S)$ is a **subspace**.
 
@@ -711,30 +701,30 @@ $\ast$ If S is a set of vectors in vector space V $\Rightarrow span(S)$ is a **s
   Since $c_n + c d_n$ is a scalar, $u+cw \in span(S)$, and hence span is a subspace $\Box$.
 
 
-#####Null Space
+##### Null Space
 Null space of A is the set $N(A) = \{ \overrightarrow{x}: A\overrightarrow{x}
 = \overrightarrow{0} , x \in R^n \}$.
 
-#####Column Space
+##### Column Space
 
 Column space of A is denoted by $col(A)$ is the set of all linear combinations
 of column vectors of A.
 
-#####Theorem - $Ax = b$ consistence
+##### Theorem - $Ax = b$ consistence
 
 Let A be an m × n matrix. The linear system $Ax = b$ is consistent $\iff b
 \in col(A)$.
 
 
-#####Theorem - $N(A)$ and $col(A)$ are Subspace
+##### Theorem - $N(A)$ and $col(A)$ are Subspace
 
 If $A$ is $m \times n$ matrix, $col(A)$ is subspace of $R^m$ and $N(A)$ is
 subspace of $R^n$.
 
 
-###Basis and Dimension
+### Basis and Dimension
 
-####Span
+#### Span
 Let $S = \{v_1, v_2, \dots , v_m \}$ and $\forall v \in V$ can be written as
 $v = c_1v_1 + c_2v_2 + \dots + c_mv_m \Rightarrow span(S) = V$ (S span V).
 
@@ -754,13 +744,7 @@ v_1 & v_2 & \dots & v_k & | & a_1 \\
  \quad & \quad & \quad & \quad & | & a_n \\
 \end{bmatrix}$ is consistent (by echelon form).
 
-
-
-
-
-
-
-####Basis for a Vector Space - Definition
+#### Basis for a Vector Space - Definition
 
 If following properties hold:
 
@@ -785,7 +769,7 @@ For Rank(V) = n.
 
 - if $k=n and $det(A) \neq 0$ (also means that $Rank(A) = n$) then S is **linearly independent**
 
-####Wronskian of Function set
+#### Wronskian of Function set
 
 Function set $S = {f_1, f_2, \dots, f_k}$ where $f_1, f_2, \dots, f_k \in C^{k-1}(I)$
 (means that those functions differentiable k-1 times)
@@ -800,7 +784,7 @@ $\ast$ Wronskian is scalar since it is a determinant.
 
 $\ast$ If $W[f_1, f_2, \dots, f_k] \neq 0$ for any $x_0 \in I$, then S is linearly independent.
 
-####Dimension
+#### Dimension
 The number of vectors in any basis for $V$ and denoted by $dim(V)$.
 
 $\ast$ Every basis of V has $n$ vectors.
@@ -816,15 +800,16 @@ $\ast$ Let $dim(V) = n$ and $B = \{ v_1, v_2, \dots, v_k \}$ s.t. $v_1, v_2, \do
 2) If B spans V $\Rightarrow$ B is basis for V (B is linearly independent also).
 
 
-####Ordered Basis
+#### Ordered Basis
 
 Ordered basis are basis that ordered set of vectors.
 
-####Transition Matrix of Ordered Basis from B to B'
+#### Transition Matrix of Ordered Basis from B to B'
 
 Let $B = \{ v_1, v_2, \dots, v_n \}$ and $B' = \{ v'_1, v'_2, \dots, v'_n \}$
 
-Transition matrix $[I]^{B'}_B = \begin{bmatrix}
+Transition matrix
+$$ [I]^{B'}_B = \begin{bmatrix}
 \begin{bmatrix}
 v_1
 \end{bmatrix}_{B'}
@@ -837,7 +822,7 @@ v_2
 \begin{bmatrix}
 v_n
 \end{bmatrix}_{B'}
-\end{bmatrix}$
+\end{bmatrix} $$
 
 
 **Finding Transition Matrix**
@@ -851,7 +836,7 @@ c_1 & c_2 & \dots & c_n \\
 \end{bmatrix}$
 
 
-####Eigenvalues and Eigenvectors
+#### Eigenvalues and Eigenvectors
 $A$ is matrix, $\overrightarrow{v}$ is eigenvector and $\lambda$ is eigenvalue.
 $$ A \overrightarrow{v} = \lambda \overrightarrow{v} $$
 

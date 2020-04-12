@@ -9,7 +9,7 @@ $\lim\limits_{x \to a^-}f(x) = \lim\limits_{x \to a^+}f(x)$.
 
 ####Monotonic Functions
 If function f is increasing ($f'(x)>0$) or decreasing ($f'(x)<0$) for an interval
-$\implies$ f is Monotonic function.
+$\Rightarrow$ f is Monotonic function.
 
 ####Solving Inverse  of a Functions
 1)Solve $y=f(x)$ for x
@@ -83,7 +83,7 @@ $$ \lim\limits_{\bigtriangleup t \to 0}\frac {\bigtriangleup s}{\bigtriangleup t
 
 2) Find $y', y''$
 
-3) Find critical points(bounds, $f'(x)=0$, $\nexists f'(x)$) as (x,y).
+3) Find critical points(bounds, $f'(x)=0$, $\nexists f'(x)$) as ($x,y$).
 
 4) Find intervals of f that it is increasing ($f'(x)>0$) or decreasing ($f'(x)<0$)
 
@@ -202,7 +202,7 @@ $$ \frac{|\overrightarrow{PQ} . \overrightarrow{n}|}{||\overrightarrow{n}||} = d
 
 $$ \cos(\theta) = \frac {\overrightarrow{u} .  \overrightarrow{v}}{||\overrightarrow{u}||.||\overrightarrow{v}||}
 
-\implies \theta = \cos^{-1} \Bigg(
+\Rightarrow \theta = \cos^{-1} \Bigg(
 \frac{\overrightarrow{u}.\overrightarrow{v}}{||\overrightarrow{u}||.||\overrightarrow{v}||} \Bigg) $$
 
 
@@ -224,7 +224,7 @@ $$ a = c''(t) = v' \to \mathrm{acceleration} $$
 $$ \bigtriangledown f =
 \bigg(\frac {\partial f}{\partial x},\frac {\partial f}{\partial y},\frac {\partial f}{\partial z}\bigg) \\$$
 
-*$\bigtriangledown f \neq 0 \implies \bigtriangledown f$ gives direction of f is increasing fastest.
+*$\bigtriangledown f \neq 0 \Rightarrow \bigtriangledown f$ gives direction of f is increasing fastest.
 
 *$\bigtriangledown f$ is normal to Level Surfaces.
 
@@ -292,7 +292,7 @@ $$ B = T \times N \\ \text{Unit Binormal Vector} \\$$
 **2) Zero Matrix** $A = A_{ij}$ is a zero matrix if $a_{ij} = 0$  $\forall i,j$.
 
 **3) Diagonal Matrix** If $A$ is square matrix and $a_{ij} = 0$ for $\forall i
-\neq j$ and $a_{ij} \neq 0$ for $\exists i = j \implies$ A is diagonal matrix.
+\neq j$ and $a_{ij} \neq 0$ for $\exists i = j \Rightarrow$ A is diagonal matrix.
 
 **4) Identity Matrix** $I_{nxn} = (\sigma_{ij})$ and $\sigma_{ij} = \begin{cases}
 1, i = j \\
@@ -302,7 +302,7 @@ $$ B = T \times N \\ \text{Unit Binormal Vector} \\$$
 **5) Transpose of a Matrix** $A^t$ is a transpose of $A_{mxn} = (a_{ij})$ if
 $A^t_{nxm} = (a_{ji})$
 
-**6) Symmetric Matrix** $A = (a_{ij})$ and $a_{ij} = a_{ji} \implies$ A is a
+**6) Symmetric Matrix** $A = (a_{ij})$ and $a_{ij} = a_{ji} \Rightarrow$ A is a
 symmetric matrix and $A = A^t$
 
 **7) Upper Triangular Matrix** $A = (a_{ij})$ and $a_{ij} = 0$ for $\forall j<i$
@@ -448,9 +448,9 @@ $$
 
 
 **Note** A system can have **3 type solution**;
-1) Unique solution $\rightarrow Rank(A) = Rank[A|b] = n \implies$ unique solution
-2) Infinitely many solution $\rightarrow Rank(A) = Rank[A|b] < n \implies$ infinitely many solution
-3) No solution $\rightarrow Rank(A) \neq Rank[A|b] \implies$ no solution
+1) Unique solution $\rightarrow Rank(A) = Rank[A|b] = n \Rightarrow$ unique solution
+2) Infinitely many solution $\rightarrow Rank(A) = Rank[A|b] < n \Rightarrow$ infinitely many solution
+3) No solution $\rightarrow Rank(A) \neq Rank[A|b] \Rightarrow$ no solution
 
 
 
@@ -482,7 +482,7 @@ $$ \text{where } C_{ij}= (-1)^{i+j}M_{ij} \text{ and } M_{ij} \text{ is the mino
 
 $\ast det(A) = det(A^t)$
 
-$det(A) \neq 0 \implies$ A is invertible and $Rank(A) = n$
+$det(A) \neq 0 \Rightarrow$ A is invertible and $Rank(A) = n$
 
 
 ###Algebraic Structures
@@ -499,7 +499,7 @@ $det(A) \neq 0 \implies$ A is invertible and $Rank(A) = n$
 
   - Associavity: $a \diamond (b \diamond c) = (a \diamond b)\diamond c$
 
-- is Abelain Group  $\implies a \diamond b = b \diamond a$
+- is Abelain Group  $\Rightarrow a \diamond b = b \diamond a$
 
 
 #####Field
@@ -597,7 +597,7 @@ $\ast$Note that n degree Polynomial Vector Space's dimension is $dim(P_n) = n+1$
 
 - Additive inverse of a vector $\overrightarrow{v}$ is unique
 
-- If $k \cdot \overrightarrow{v} = \overrightarrow{0} \implies k = 0 \vee
+- If $k \cdot \overrightarrow{v} = \overrightarrow{0} \Rightarrow k = 0 \vee
 \overrightarrow{v} = \overrightarrow{0}$
 
 
@@ -610,13 +610,13 @@ $$ (c_1 \cdot \overrightarrow{v_1}) + (c_2 \cdot \overrightarrow{v_2}) + \dots
 + (c_k \cdot \overrightarrow{v_k})$$
 
 $\ast$ Let $u$ and $v$ are vectors in same vector space.  For any scalar $c$,
-$u = cv \implies$ then u is linear combination of v.
+$u = cv \Rightarrow$ then u is linear combination of v.
 
 
 ####Linear Dependence
 
 $S = \{v_1, v_2, \dots , v_m \}$ in a vector space V is **linearly independent**
-$\implies c_1 v_1 + \dots + c_m v_m = 0$ is **only have trivial solution**
+$\Rightarrow c_1 v_1 + \dots + c_m v_m = 0$ is **only have trivial solution**
 $c_1 = c_2 = \dots = c_m = 0$.
 
 If the equation has a nontrivial solution the set $S$ is **linearly dependent**.
@@ -630,15 +630,15 @@ $\ast A_{n \times n}$ and column vectors of A **linearly independent** $\iff$ A 
 $\ast$ If $\overrightarrow{0}$ vector contained by S, then S is **linearly dependent**.
 
 $\ast$ Let $S = \{v_1, v_2, \dots, v_n\}$ is set of nonzero vectors that in
-$R^m$. $n > m \implies$ S is **linearly dependent**.
+$R^m$. $n > m \Rightarrow$ S is **linearly dependent**.
 
 $\ast$ Set of nonzero vectors is **linearly dependent** $\iff$ at least one of the vectors
 is linear combination of other vectors in the set.
 
-$\ast$ S is **linearly independent** set of vectors $\implies$ subset of S is
+$\ast$ S is **linearly independent** set of vectors $\Rightarrow$ subset of S is
 linearly independent.
 
-$\ast$ T is **linearly dependent** set of vectors and S contains T $\implies$ S is
+$\ast$ T is **linearly dependent** set of vectors and S contains T $\Rightarrow$ S is
 linearly dependent.
 
 $\ast$ Let $Ax = b$ consistent. The solution is unique $\iff$ column vectors of A
@@ -688,7 +688,7 @@ a_{m1} & a_{m2} & \dots & a_{mn} \\
 
 3) Solve the system.
 
-4) If only solution is the trivial solution $c_1 = c_2 = \dots = c_n = 0 \implies$
+4) If only solution is the trivial solution $c_1 = c_2 = \dots = c_n = 0 \Rightarrow$
  vectors are linearly independent.
 
 
@@ -701,7 +701,7 @@ $$ span(S) = \{(c_1 \cdot \overrightarrow{v_1}) + (c_2 \cdot \overrightarrow{v_2
 
 #####Proposition - $span(S)$ is a Subspace
 
-$\ast$ If S is a set of vectors in vector space V $\implies span(S)$ is a **subspace**.
+$\ast$ If S is a set of vectors in vector space V $\Rightarrow span(S)$ is a **subspace**.
 
 - **Proof**
 
@@ -736,11 +736,11 @@ subspace of $R^n$.
 
 ####Span
 Let $S = \{v_1, v_2, \dots , v_m \}$ and $\forall v \in V$ can be written as
-$v = c_1v_1 + c_2v_2 + \dots + c_mv_m \implies span(S) = V$ (S span V).
+$v = c_1v_1 + c_2v_2 + \dots + c_mv_m \Rightarrow span(S) = V$ (S span V).
 
 Let $dim(V) = n$.
 
-$\ast$ If $k < n \implies$ $span(S) \neq V$.
+$\ast$ If $k < n \Rightarrow$ $span(S) \neq V$.
 
 **How to show S spans $R^n$**
 
@@ -805,15 +805,15 @@ The number of vectors in any basis for $V$ and denoted by $dim(V)$.
 
 $\ast$ Every basis of V has $n$ vectors.
 
-$\ast$ If $V = \{ \overrightarrow{0} \} \implies dim(V) = 0$.
+$\ast$ If $V = \{ \overrightarrow{0} \} \Rightarrow dim(V) = 0$.
 
 $\ast$ $dim(M_{m \times n}(IR)) = m \cdot n$ , $dim(P_n(R))= n + 1$
 
 $\ast$ Let $dim(V) = n$ and $B = \{ v_1, v_2, \dots, v_k \}$ s.t. $v_1, v_2, \dots, v_k \in V$
 
-1) If B linearly independent $\implies$ B is basis for V (B spans V also).
+1) If B linearly independent $\Rightarrow$ B is basis for V (B spans V also).
 
-2) If B spans V $\implies$ B is basis for V (B is linearly independent also).
+2) If B spans V $\Rightarrow$ B is basis for V (B is linearly independent also).
 
 
 ####Ordered Basis

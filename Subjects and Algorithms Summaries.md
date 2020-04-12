@@ -1,6 +1,6 @@
 # Subjects and Algorithms Summaries
 
-## Limitss
+## Limit
 #### Existance
 Limit exists $\iff$ left-hand and right-hand limits exists and
 $\lim\limits_{x \to a^-}f(x) = \lim\limits_{x \to a^+}f(x)$.
